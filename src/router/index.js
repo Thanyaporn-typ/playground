@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import HomePage from '../views/Home.vue';
+import Welcome from '../views/Welcome.vue';
 import CalculateTabs from '../views/CalculateTabs.vue';
 import CalculateTabsBri from '../views/CalculateTabsBri.vue';
 import PhotoBooth from "@/views/PhotoBooth.vue";
@@ -15,6 +15,11 @@ Vue.use(Router);
 const routes = [
   {
     path: '/',
+    name: 'welcome',
+    component: Welcome,
+  },
+  {
+    path: '/calculate',
     name: 'calculate',
     component: CalculateTabs,
   },
