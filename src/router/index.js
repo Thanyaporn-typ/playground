@@ -58,6 +58,11 @@ const routes = [
     name: 'EcsLand',
     component: () => import('@/views/EcsLand.vue')
   },
+  {
+    path: '/techgeekhub',
+    name: 'TechGeekHub',
+    component: () => import('@/views/TechGeekHub.vue')
+  },
 ];
 
 const router = new Router({
